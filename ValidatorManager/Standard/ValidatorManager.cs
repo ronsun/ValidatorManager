@@ -1,6 +1,6 @@
 ﻿using ValidatorManager.ChainOfResponsibility.Validators;
 
-namespace ValidatorManager.ChainOfResponsibility
+namespace ValidatorManager.Standard
 {
     public class ValidatorManager
     {

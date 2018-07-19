@@ -1,4 +1,4 @@
-﻿namespace ValidatorManager.ChainOfResponsibility.Validators
+﻿namespace ValidatorManager.Standard.Validators
 {
     public class ValidateContext
     {
