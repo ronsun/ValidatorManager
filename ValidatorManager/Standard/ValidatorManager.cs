@@ -1,4 +1,4 @@
-﻿using ValidatorManager.ChainOfResponsibility.Validators;
+﻿using ValidatorManager.Standard.Validators;
 
 namespace ValidatorManager.Standard
 {

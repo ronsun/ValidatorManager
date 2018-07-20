@@ -42,8 +42,24 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Advance\ValidatorManager.cs" />
+    <Compile Include="Advance\Validators\AmountValidator.cs" />
+    <Compile Include="Advance\Validators\CountryValidator.cs" />
+    <Compile Include="Advance\Validators\EmailValidator.cs" />
+    <Compile Include="Advance\Validators\ValidateContext.cs" />
+    <Compile Include="Advance\Validators\Validator.cs" />
     <Compile Include="Basic\Validator.cs" />
     <Compile Include="Basic\ValidatorManager.cs" />
+    <Compile Include="Complex\ChainValidators\ValidationResult.cs" />
+    <Compile Include="Complex\SeparateValidators\FooValidator.cs" />
+    <Compile Include="Complex\SeparateValidators\BarValidator.cs" />
+    <Compile Include="Complex\SeparateValidators\ValidateContext.cs" />
+    <Compile Include="Complex\SeparateValidators\Validator.cs" />
+    <Compile Include="Complex\ChainValidators\AmountValidator.cs" />
+    <Compile Include="Complex\ChainValidators\CountryValidator.cs" />
+    <Compile Include="Complex\ChainValidators\EmailValidator.cs" />
+    <Compile Include="Complex\ChainValidators\ValidateContext.cs" />
+    <Compile Include="Complex\ChainValidators\Validator.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Simple\ValidatorManager.cs" />

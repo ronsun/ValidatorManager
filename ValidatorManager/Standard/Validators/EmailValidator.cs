@@ -4,7 +4,12 @@
     {
         public override bool Validate(ValidateContext context)
         {
-            return context.Email == "ron.sun@mailserver.com";
+            if (context.Email == "ron.sun@mailserver.com")
+            {
+                return NextValidator?.Validate(context) ?? true;
+            }
+
+            return false;
         }
     }
 }

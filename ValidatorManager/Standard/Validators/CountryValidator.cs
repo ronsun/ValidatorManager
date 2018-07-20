@@ -4,7 +4,12 @@
     {
         public override bool Validate(ValidateContext context)
         {
-            return context.Country == "Taiwan";
+            if (context.Country == "Taiwan")
+            {
+                return NextValidator?.Validate(context) ?? true;
+            }
+
+            return false;
         }
     }
 }
