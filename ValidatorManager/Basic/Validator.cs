@@ -10,7 +10,7 @@ namespace ValidatorManager.Basic
     {
         public bool AmountValidate(decimal amount)
         {
-            return amount > 10 && amount < 1000;
+            return amount > 10;
         }
 
         public bool EmailValidate(string email)

@@ -4,7 +4,7 @@
     {
         public override bool Validate(ValidateContext context)
         {
-            if (context.Amount > 10 && context.Amount < 1000)
+            if (context.Amount > 10)
             {
                 return NextValidator?.Validate(context) ?? true;
             }

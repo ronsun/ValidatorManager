@@ -10,7 +10,7 @@ namespace ValidatorManager.Basic
     {
         private Validator _validator = new Validator();
 
-        public bool BasicValidation(string email, decimal amount)
+        public bool BasicValidation(decimal amount, string email)
         {
             List<Func<bool>> valodationMethods = new List<Func<bool>>()
             {
@@ -21,7 +21,7 @@ namespace ValidatorManager.Basic
             return Validate(valodationMethods);
         }
 
-        public bool FullValidation(string email, decimal amount, string country)
+        public bool FullValidation(decimal amount, string email, string country)
         {
             List<Func<bool>> valodationMethods = new List<Func<bool>>()
             {
