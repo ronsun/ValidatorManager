@@ -75,6 +75,7 @@
     <Compile Include="Standard\Validators\EmailValidator.cs" />
     <Compile Include="Standard\Validators\ValidateContext.cs" />
     <Compile Include="Standard\Validators\Validator.cs" />
+    <Compile Include="Tests.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
