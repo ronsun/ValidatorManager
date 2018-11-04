@@ -1,5 +1,5 @@
 # ValidatorManager
-Note for how to make a seris of reusable validators and how to manage them.
+Note for how to make a series of reusable validators and how to manage them.
 
 ## Design
 [Basic design](ValidatorManager/Basic)  
