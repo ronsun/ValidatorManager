@@ -1,4 +1,4 @@
 **Standard design**
 + Similar with simple scenario.
-+ Chain of responsibility parttern like.
++ Similar with chain of responsibility pattern.
 + Used for validation chain.
