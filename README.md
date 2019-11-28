@@ -8,5 +8,7 @@ Note for how to make a series of reusable validators and how to manage them.
 [Advance design](ValidatorManager/Advance)  
 [Complex design](ValidatorManager/Complex)  
 
+**Finally...[Back to basic and simpler](ValidatorManager/BackToBasic)**
+
 ## Demos and tests
 Some demos and tests on Program.cs and Tests.cs. The test methods are very simple and without any test framwork becuase it is just a sample project for design and concept.

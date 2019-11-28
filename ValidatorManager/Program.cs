@@ -22,6 +22,7 @@ namespace ValidatorManager
             tests.SimpleTest();
             tests.AdvanceTest();
             tests.ComplexTest();
+            tests.BackToBasicTest();
 
             // Demo
             //BasicDemo();

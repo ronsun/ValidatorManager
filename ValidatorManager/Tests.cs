@@ -1,8 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
 namespace ValidatorManager
 {
@@ -276,6 +272,38 @@ namespace ValidatorManager
                 Bar = bar
             };
             var actual = new Complex.ValidatorManager().FullValidation(chainValidationContext, individualValidationContext);
+            Assert(expected, actual);
+        }
+
+        #endregion
+
+
+        #region BackToBasicTest
+
+        public void BackToBasicTest()
+        {
+            var manager = new BackToBasic.ValidatorManager();
+
+            Console.WriteLine($"BackToBasic.ValidatorManager.BasicToBasicValidation() => ");
+            BackToBasicTest_BasicToBasicValidation(invalidAmount, validEmail, validFoo, validBar, false);
+            BackToBasicTest_BasicToBasicValidation(validAmount, invalidEmail, validFoo, validBar, false);
+            BackToBasicTest_BasicToBasicValidation(invalidAmount, invalidEmail, validFoo, validBar, false);
+            BackToBasicTest_BasicToBasicValidation(validAmount, validEmail, validFoo, validBar, true);
+
+            BackToBasicTest_BasicToBasicValidation(validAmount, validEmail, invalidFoo, validBar, true);
+            BackToBasicTest_BasicToBasicValidation(validAmount, validEmail, validFoo, invalidBar, true);
+            BackToBasicTest_BasicToBasicValidation(validAmount, validEmail, validFoo, validBar, true);
+            BackToBasicTest_BasicToBasicValidation(validAmount, validEmail, invalidFoo, invalidBar, false);
+
+
+            Console.WriteLine();
+            Console.WriteLine("===================================================");
+            Console.WriteLine();
+        }
+
+        private void BackToBasicTest_BasicToBasicValidation(decimal amount, string email, string foo, string bar, bool expected)
+        {
+            var actual = new BackToBasic.ValidatorManager().BasicToBasicValidation(amount, email, foo, bar);
             Assert(expected, actual);
         }
 

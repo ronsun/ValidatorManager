@@ -48,6 +48,9 @@
     <Compile Include="Advance\Validators\EmailValidator.cs" />
     <Compile Include="Advance\Validators\ValidateContext.cs" />
     <Compile Include="Advance\Validators\Validator.cs" />
+    <Compile Include="BackToBasic\AnotherValidator.cs" />
+    <Compile Include="BackToBasic\Validator.cs" />
+    <Compile Include="BackToBasic\ValidatorManager.cs" />
     <Compile Include="Basic\Validator.cs" />
     <Compile Include="Basic\ValidatorManager.cs" />
     <Compile Include="Complex\ChainValidators\ValidationResult.cs" />
