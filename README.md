@@ -10,5 +10,5 @@ Note for how to make a series of reusable validators and how to manage them.
 
 **Finally...[Back to basic and simpler](ValidatorManager/BackToBasic)**
 
-## Demos and tests
-Some demos and tests on Program.cs and Tests.cs. The test methods are very simple and without any test framwork becuase it is just a sample project for design and concept.
+## Tests
+Some tests on Program.cs and Tests.cs. No test framwork applied becuase it is just a sample project for design and concept.
